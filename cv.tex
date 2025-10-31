@@ -1,0 +1,372 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{fancyhdr}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+% \usepackage{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% cv.bib contains your publications
+\addbibresource{cv.bib}
+
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\textbf{\thepage}}
+\fancyfoot[LO,RE]{Pascal-Emmanuel Lachance}
+
+\name{Pascal-Emmanuel Lachance}
+\tagline{Maîtrise en Génie Électrique - Cheminement interdisciplinaire en imagerie médicale}
+
+%% You can add multiple photos on the left or right
+%\photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{pascalemmanuel.lachance@gmail.com}
+  \phone{+1-581-748-9134}
+  \mailaddress{2575, Rue Galt O, J1K 1L7}
+  \location{Sherbrooke, CANADA}
+  \homepage{www.raesangur.com}
+  % \twitter{@twitterhandle}
+  \linkedin{https://www.linkedin.com/in/pascal-emmanuel-l-b9686aa4/}
+  \github{https://github.com/Raesangur}
+  %\orcid{0000-0000-0000-0000}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  %\NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  %\gitlab{your_id}
+  %%
+}
+
+\makecvheader
+
+\columnratio{0.575}
+\begin{paracol}{2}
+
+%\begin{itemize}
+%    \item Concevoir des produits électroniques miniature de haute fiabilité (PCB multicouches, PCB flexibles, FPGA)
+%    \item Programmer et corriger des logiciels
+%    \item Analyser, diagnostiquer et résoudre des problèmes électriques et informatiques
+%\end{itemize}
+
+\cvsection{Expérience Professionnelle}
+
+\cvevent{Tutorat en conception de PCB}{Université de Sherbrookke}{Janvier 2025 -- Mai 2025}{Sherbrooke}
+\begin{itemize}
+\item Suivi personalisé avec étudiants en difficulté d'apprentissage pour les cours de spécialisation de dernière année
+\end{itemize}
+
+\divider
+\cvevent{Mentor en fabrication}{Studio de Création}{Hivers 2024 \& 2025}{Sherbrooke}
+\begin{itemize}
+\item Maintenance des machines du FabLab de l'Université
+\item Former des étudiants à utiliser l'équipement de fabrication pour fabriquer des prototypes
+\item Assister des étudiants à conçevoir leurs projets
+\end{itemize}
+
+\divider
+\cvevent{Caractérisation de ASIC en photonique sur silicium}{Groupe de recherche en Appareillage Médical, 3iT}{Stage Mai 2024 -- Août 2024}{Sherbrooke}
+\begin{itemize}
+\item Validation de systèmes intégrés
+\item Programmation SystemVerilog
+\end{itemize}
+
+\divider
+\cvevent{Programmation de BMS}{Calogy Solutions}{Stage Août 2023 -- Décembre 2023}{Sherbrooke}
+\begin{itemize}
+\item Programmation en C de systèmes de gestion de batteries pour le domaine automobile et aéronautique
+\end{itemize}
+
+\divider
+\cvevent{Conception électronique miniaturisée}{Krag Systems Inc.}{Stage Août 2022 -- Décembre 2022}{Sherbrooke}
+\begin{itemize}
+\item Conception de PCB miniatures multicouches devant respecter des normes EMC
+\item Conception de PCB flexibles pour intégration électromécanique
+\end{itemize}
+
+\divider
+\cvevent{Conception électronique de systèmes spaciaux}{ABB}{Stage Janvier 2022 -- Mai 2022}{Québec}
+\begin{itemize}
+\item Conception d'un PCB multicouches destiné à un satellite
+\item Conception, révision et tests de dispositifs électroniques industriels
+\end{itemize}
+
+\newpage
+\cvevent{Développement d'un magnétomètre quantique spatial}{Université de Sherbrooke}{Stage Mai 2021 -- Août 2021}{Sherbrooke}
+\begin{itemize}
+\item Conception, révision et tests d'un PCB 12 couches pour prototype de magnétomètre quantique destiné à un satellite
+\item Dans le cadre du projet QMSat CubeSat, en association avec l'ASC
+\end{itemize}
+
+\divider
+\cvevent{Conception de systèmes de suivis dans les hopitaux}{Humanitas}{Mars 2020 -- Avril 2020}{Québec}
+\begin{itemize}
+\item Bénévolat au début de la pandémie de COVID-19
+\item Conception de PCBs faisants des nœuds de réseau dans les hôpitaux du Canada
+\end{itemize}
+
+\divider
+\cvevent{Développement de bancs de tests automatisés}{Conception Électronique Privé}{Janvier 2019 -- Août 2020}{Québec}
+\begin{itemize}
+\item Programmation en C de systèmes de tests automatisés
+\item Conception de systèmes de sécurités pour véhicules lourds
+\end{itemize}
+
+\divider
+\cvevent{Tutorat en AEC en Programmation}{Cégep Limoilou}{Juin 2019 -- Mars 2020}{Québec}
+\begin{itemize}
+\item Expliquer des concepts de programmation en C\#
+\item Accompagner des élèves dans leurs travaux
+\end{itemize}
+
+\divider
+\cvevent{Animateur de camp de jour (\,Thématique: robotique\,)}{Safari Éducation \& Loisirs Saint-Sacrement}{Étés 2017 et 2018}{Québec}
+\begin{itemize}
+\item Animer des activités aux thèmes de la robotique à des jeunes de 7 à 12 ans
+\end{itemize}
+
+
+%% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+%% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+\mynames{Pascal-Emmanuel\bibnamedelima Lachance,
+  Pascal-Emmanuel,
+  P.-E.\bibnamedelimi L.,
+  P-E\bibnamedelimi L}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Langages}
+
+\cvskill{Français}{5}
+\cvskill{Anglais}{5}
+\cvskill{Japonais}{1.5}
+
+\divider
+\cvskill{C}{5} 
+\cvskill{C++}{5} 
+\cvskill{Python}{4.5} 
+\cvskill{C\#}{4} 
+\cvskill{Bash}{3} 
+\cvskill{ASM (x86, ARM, MIPS)}{3} 
+\cvskill{VHDL \& SystemVerilog}{3} 
+\cvskill{Java}{2.5} 
+\cvskill{LaTeX}{4} 
+
+\medskip
+\cvsection{Éducation}
+
+\cvevent{Maîtrise en Génie Électrique}{Université de Sherbrooke}{Mai 2025 -- Présent}{}
+Développement d’un nouveau système d’acquisition modulaire et extensible pour l’interfaçage de matrices de photodétecteurs à base de diode à avalanche monophotonique
+
+\divider
+
+\vspace{18pt}
+\hfill\begin{minipage}{2cm}
+    \textbf{\color{heading}\small Cote Z: 4.12}
+\end{minipage}
+\vspace{-28pt}
+
+\cvevent{Baccalauréat en Génie Informatique}{Université de Sherbrooke}{Août 2020 -- Décembre 2024}{}
+
+\begin{itemize}
+\item Spécialisation en conception de PCB
+\item Spécialisation en conception d'ASIC
+\item Spécialisation en vérification fonctionnelle
+\item Projet \href{https://github.com/orgs/Reali-Plus/repositories}{Réali+}\,: Système d'acquisition de mouvement pour réalité virtuelle
+\end{itemize}
+
+\divider
+
+\vspace{46pt}
+\hfill\begin{minipage}{2cm}
+    \textbf{\color{heading}\small Cote R: 31.5}
+\end{minipage}
+\vspace{-56pt}
+
+\cvevent{Technique en Systèmes Ordinés - Électronique Programmable et Robotique}{Cégep Limoilou, Québec}{Août 2016 -- Juin 2019}{}
+\begin{itemize}
+    \item Responsable de programme à l'AGEECL (Association Étudiante)
+    \item Projet \href{https://github.com/graphbit/GraphBit-V1}{GraphBit}\,: Développement d'un contrôleur d'écran sur FPGA
+\end{itemize}
+
+\newpage
+\cvevent{Diplôme d'études secondaires}{Collège Saint-Charles Garnier}{2011 -- 2016}{Québec}
+\begin{itemize}
+    \item Fondateur du \textit{Club de robotique}, menant à la création du \href{https://collegegarnier.qc.ca/programmes/11-profils/robotique/}{profil Robotique et programmation}
+\end{itemize}
+
+\cvsection{Logiciels}
+
+\cvtag{Suite Office}
+\cvtag{Overleaf}
+\cvtag{Microsoft Teams}
+\cvtag{Jira}
+\cvtag{Linux}
+\cvtag{Windows}
+\cvtag{FreeRTOS}
+\cvtag{Proxmox}
+\cvtag{FreeBSD}
+\cvtag{Android}
+\cvtag{Altium Designer}
+\cvtag{KiCAD}
+\cvtag{OrCAD}
+\cvtag{LTSpice}
+\cvtag{TINA-TI}
+\cvtag{Git}
+\cvtag{SVN}
+\cvtag{Github Actions}
+\cvtag{SolidWorks}
+\cvtag{FreeCAD}
+\cvtag{AutoCAD}
+\cvtag{Visual Studio}
+\cvtag{Vivado}
+\cvtag{STM32CubeIDE}
+\cvtag{Eclipse}
+\cvtag{CMake}
+\cvtag{gcc}
+\cvtag{LLVM}
+
+
+\end{paracol}
+
+
+\cvsection{Projets \& Implication}
+
+\hfill\begin{minipage}{2.5cm}
+    \includegraphics[width=\linewidth]{figures/vamudes.pdf}
+\end{minipage}
+\vspace{-1cm}
+
+\cvevent{VAMUdeS}{Groupe technique universitaire: Conception de drones}{2020 -- 2024}{}
+\begin{itemize}
+\item Pilote de la charge utile pour la compétition USC 2021
+\item Opérateur station terrestre pour les compétitions AÉAC 2022 \& 2023
+\item Responsable santé et sécurité 2021 -- 2024
+\item Responsable informatique 2022 -- 2024
+\item Responsable électrique 2023 -- 2024
+\end{itemize}
+
+\divider
+
+\hfill\begin{minipage}{2.5cm}
+    \includegraphics[width=\linewidth]{figures/sirius}
+\end{minipage}
+\vspace{-0.75cm}
+
+\cvevent{SIRIUS}{Groupe technique universitaire: Conception de satellites}{2021 -- 2024}{}
+\begin{itemize}
+\item \textbf{Satellité QMSat lancé dans l'espace en 2024!}
+\item En collaboration avec l'Agence Spatiale Canadienne -- Initiative du \textit{Canadian CubeSat Project}
+\item Responsable de la charge utile 2021 -- 2023
+\item Responsable santé et sécurité 2021 -- 2024
+\item Responsable électrique 2022 -- 2024
+\item Responsable informatique 2022
+\end{itemize}
+
+\divider
+
+\hfill\begin{minipage}{1.25cm}
+    \includegraphics[width=\linewidth]{figures/jdis}
+\end{minipage}
+\vspace{-1.25cm}
+
+\cvevent{JDIS}{Groupe technique universitaire: Défis de programmation et hacking}{2022 -- 2024}{}
+\begin{itemize}
+\item Participation au NordSec CTF 2022, 2024 \& 2025
+\item Participation au Hackfest CTF 2021 -- 2024
+\item Participation au CSGames 2023 -- 2024
+\item Participation au UnitedCTF 2022 -- 2023
+\item Participation au JDISGames 2023 -- 2024 ($2^e$ place)
+\end{itemize}
+
+\divider
+
+\hfill\begin{minipage}{1.25cm}
+    \includegraphics[width=\linewidth]{figures/reali-plus}
+\end{minipage}
+\vspace{-1.1cm}
+
+\cvevent{Réali+}{Projet Majeur de Conception}{2023 -- 2024}{}
+\begin{itemize}
+\item Système d'acquisition de mouvement et de rétroaction haptique pour réalité virtuelle et réalité augmentée
+\item Proposeur du projet \& Chef d'équipe
+\item Responsable de l'équipe électrique
+\end{itemize}
+
+\medskip
+
+%\cvsection{Publications}
+
+\end{document}
