@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  31 OCT 2025 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.24)  31 OCT 2025 16:05
 entering extended mode
  %&-line parsing enabled.
 **cv.tex
@@ -1745,9 +1745,9 @@ LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 237.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/sl' in size <10> not available
 (Font)              Font shape `T1/lato-TLF/m/it' tried instead on input line 2
-64.
+62.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 264.
+(Font)              scaled to size 10.0pt on input line 262.
 [1
 
 {/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_j2bk2t.enc}{/usr/share/texmf
@@ -1756,36 +1756,42 @@ fontawesome5/fa5free0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/f
 a5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/
 usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/share/te
 xmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc}]
-Overfull \hbox (33.47282pt too wide) in paragraph at lines 265--265
+Overfull \hbox (33.47282pt too wide) in paragraph at lines 263--263
 [][][]  
  []
 
-<figures/vamudes.png, id=36, 5019.3924pt x 1985.4978pt>
-File: figures/vamudes.png Graphic file (type png)
-<use figures/vamudes.png>
-Package pdftex.def Info: figures/vamudes.png  used on input line 308.
-(pdftex.def)             Requested size: 71.13188pt x 28.11488pt.
-<figures/sirius.png, id=38, 1066.384pt x 309.155pt>
+
+
+[2]
+<figures/vamudes.pdf, id=40, 5019.82727pt x 1985.6699pt>
+File: figures/vamudes.pdf Graphic file (type pdf)
+<use figures/vamudes.pdf>
+Package pdftex.def Info: figures/vamudes.pdf  used on input line 319.
+(pdftex.def)             Requested size: 71.13188pt x 28.11732pt.
+<figures/sirius.png, id=41, 1066.384pt x 309.155pt>
 File: figures/sirius.png Graphic file (type png)
 <use figures/sirius.png>
-Package pdftex.def Info: figures/sirius.png  used on input line 324.
+Package pdftex.def Info: figures/sirius.png  used on input line 335.
 (pdftex.def)             Requested size: 71.13188pt x 20.6194pt.
-
-
-[2 <./figures/vamudes.png> <./figures/sirius.png>]
-<figures/jdis.png, id=47, 1003.75pt x 1003.75pt>
+<figures/jdis.png, id=43, 1003.75pt x 1003.75pt>
 File: figures/jdis.png Graphic file (type png)
 <use figures/jdis.png>
-Package pdftex.def Info: figures/jdis.png  used on input line 341.
+Package pdftex.def Info: figures/jdis.png  used on input line 352.
 (pdftex.def)             Requested size: 35.56593pt x 35.56367pt.
-<figures/reali-plus.png, id=48, 205.9695pt x 240.9pt>
+<figures/reali-plus.png, id=44, 205.9695pt x 240.9pt>
 File: figures/reali-plus.png Graphic file (type png)
 <use figures/reali-plus.png>
-Package pdftex.def Info: figures/reali-plus.png  used on input line 357.
-(pdftex.def)             Requested size: 35.56593pt x 41.59572pt.
+Package pdftex.def Info: figures/reali-plus.png  used on input line 368.
+(pdftex.def)             Requested size: 32.72049pt x 38.26909pt.
+<figures/graphbit.png, id=45, 843.15pt x 214.55156pt>
+File: figures/graphbit.png Graphic file (type png)
+<use figures/graphbit.png>
+Package pdftex.def Info: figures/graphbit.png  used on input line 390.
+(pdftex.def)             Requested size: 71.13188pt x 18.0975pt.
 
 
-[3 <./figures/jdis.png> <./figures/reali-plus.png>] (./cv.aux)
+[3 <./figures/vamudes.pdf> <./figures/sirius.png> <./figures/jdis.png> <./figur
+es/reali-plus.png> <./figures/graphbit.png>] (./cv.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1806,13 +1812,13 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43818 strings out of 473190
- 873280 string characters out of 5722593
- 1632978 words of memory out of 5000000
- 66423 multiletter control sequences out of 15000+600000
+ 43825 strings out of 473190
+ 873496 string characters out of 5722593
+ 1631978 words of memory out of 5000000
+ 66430 multiletter control sequences out of 15000+600000
  804724 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,11n,121p,1179b,2918s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,11n,121p,1179b,2919s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Reg
 ular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fre
 e-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesom
@@ -1822,9 +1828,9 @@ exmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb></usr/share/texmf-dist/fon
 ts/type1/google/roboto/RobotoSlab-Bold.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb>
-Output written on cv.pdf (3 pages, 1086677 bytes).
+Output written on cv.pdf (3 pages, 1311628 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
